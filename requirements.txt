@@ -1,0 +1,30 @@
+# Core dependencies
+# Install with: pip install -r requirements.txt
+
+# PyTorch and related packages
+# Install separately with: pip install -r torch_requirements.txt
+
+# Jupyter
+jupyter
+ipykernel
+
+# Local package
+-e .
+
+# Core packages
+numpy
+pandas
+matplotlib
+plotly
+seaborn
+scikit-learn
+xgboost
+lightgbm
+gym
+gymnasium
+optuna
+tqdm
+opencv-python  # OpenCV for computer vision tasks
+
+# Cloud
+boto3
