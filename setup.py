@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="computervision",
+    name="ComputerVision",
     version="0.1.0",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=find_packages(),
     install_requires=[
         "numpy",
         "torch",
@@ -22,16 +21,16 @@ setup(
             "mypy",
         ],
     },
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Wei Yang",
+    author_email="weiyang2048@gmail.com",
     description="A computer vision package for various vision-related tasks",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/computervision",
+    url="https://github.com/weiyang2048/ComputerVision",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.8",
-) 
+)
