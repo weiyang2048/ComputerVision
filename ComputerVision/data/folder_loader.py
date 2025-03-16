@@ -2,6 +2,18 @@ import os
 from pathlib import Path
 
 def get_image_paths_and_labels(base_dir):
+    """
+    Retrieves image file paths and their corresponding labels from a directory structure.
+
+    Args:
+        base_dir (str or Path): The base directory containing subdirectories for each class.
+
+    Returns:
+        tuple: A tuple containing:
+            - image_paths (list of str): List of file paths to images.
+            - labels (list of int): List of numeric labels corresponding to each image.
+            - class_to_label (dict): A dictionary mapping class names to numeric labels.
+    """
     # Initialize empty lists for paths and labels
     image_paths = []
     labels = []
@@ -23,3 +35,4 @@ def get_image_paths_and_labels(base_dir):
                 labels.append(class_label)
     
     return image_paths, labels, class_to_label
+

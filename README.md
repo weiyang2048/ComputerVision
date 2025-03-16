@@ -38,35 +38,5 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-3. Install the package and its dependencies:
-```bash
-pip install -r requirements.txt
-pip install -e .
-```
-
-## Usage
-
-Basic example of using the package:
-
-```python
-from computervision.models import SomeModel
-from computervision.data import DataLoader
-
-# Your code here
-```
-
-## Development
-
-To install development dependencies:
-```bash
-pip install -e ".[dev]"
-```
-
-To run tests:
-```bash
-pytest tests/
-```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## References
+* [Illustration of transforms](https://pytorch.org/vision/main/auto_examples/transforms/plot_transforms_illustrations.html#sphx-glr-auto-examples-transforms-plot-transforms-illustrations-py)
