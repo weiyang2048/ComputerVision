@@ -1,5 +1,6 @@
 from torchvision import transforms
 
+
 def train_test_image_transformations(resize=1024):
     """
     Creates image transformations for training and testing datasets.
@@ -15,8 +16,10 @@ def train_test_image_transformations(resize=1024):
     train_transform = transforms.Compose(
         [
             transforms.RandomResizedCrop((resize, resize)),
-            transforms.ToTensor(),
             transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(),
+            transforms.RandomRotation((0, 180)),
+            transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
         ]
     )

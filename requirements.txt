@@ -25,6 +25,6 @@ gymnasium
 optuna
 tqdm
 opencv-python  # OpenCV for computer vision tasks
-
+timm
 # Cloud
 boto3
